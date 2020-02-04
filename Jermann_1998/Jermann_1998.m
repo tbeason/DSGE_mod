@@ -18,9 +18,9 @@ dseries('initialize');
 global M_ options_ oo_ estim_params_ bayestopt_ dataset_ dataset_info estimation_info ys0_ ex0_
 options_ = [];
 M_.fname = 'Jermann_1998';
-M_.dynare_version = '4.6-unstable-a51fef393a44616e399041870983ad450945cab3';
-oo_.dynare_version = '4.6-unstable-a51fef393a44616e399041870983ad450945cab3';
-options_.dynare_version = '4.6-unstable-a51fef393a44616e399041870983ad450945cab3';
+M_.dynare_version = '4.5.7';
+oo_.dynare_version = '4.5.7';
+options_.dynare_version = '4.5.7';
 %
 % Some global variables initialization
 %
@@ -175,14 +175,6 @@ M_.orig_eq_nbr = 27;
 M_.eq_nbr = 27;
 M_.ramsey_eq_nbr = 0;
 M_.set_auxiliary_variables = exist(['./' M_.fname '_set_auxiliary_variables.m'], 'file') == 2;
-M_.max_endo_lag_orig = 1;
-M_.max_endo_lead_orig = 1;
-M_.max_exo_lag_orig = 0;
-M_.max_exo_lead_orig = 0;
-M_.max_exo_det_lag_orig = 0;
-M_.max_exo_det_lead_orig = 0;
-M_.max_lag_orig = 1;
-M_.max_lead_orig = 1;
 M_.lead_lag_incidence = [
  1 6 33;
  2 7 0;
@@ -248,7 +240,6 @@ M_.equations_tags = {
   27 , 'name' , 'Definition log marginal utility' ;
 };
 M_.static_and_dynamic_models_differ = 0;
-M_.state_var = [1 2 3 4 11 ];
 M_.exo_names_orig_ord = [1:1];
 M_.maximum_lag = 1;
 M_.maximum_lead = 1;
